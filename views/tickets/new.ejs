@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<div>Before adding, please ensure that the seat is not in the following list:</div>
+<section id="badge-container">
+</section>
+
+<form id="add-ticket-form" action="/flights/<%= flightId %>/tickets" method="POST">
+  <label>Seat:</label>
+  <input name="seat" required pattern="[A-F][1-9]\d?">
+  <label>Price:</label>
+  <input type="number" name="price">
+  <input type="submit" value="Add Ticket">
+</form>
+
+<%- include('../partials/footer') %>

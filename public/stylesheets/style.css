@@ -7,6 +7,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:bisque;
 }
 
 a {
@@ -19,66 +20,22 @@ a {
   grid-template-columns: repeat(2, minmax(auto, 22rem));
 }
 
-#new-form *, #add-review-form * {
+#new-form *, #add-destination-form * {
   font-size: 20px;
   padding: 5px;
   border-radius: 5px;
 }
 
-#new-form input[type="submit"] {
-  grid-column: span 2;
-  width: 10rem;
-  margin-left: auto;
+#new-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
 }
 
-table {
+#new-form *,
+#add-destination-form *,
+#add-ticket-form * {
   font-size: 20px;
-}
-
-table thead th {
   padding: 5px;
-  border-bottom: 2px solid #424748;
-}
-
-table td {
-  padding: 10px;
-  text-align: center;
-}
-
-#list td:nth-child(2), #list td:nth-child(3){
-  min-width: 100px;
-}
-
-#list a {
-  border-radius: 4px;
-  background-color: #B8C0C2;
-  padding: 4px;
-  text-decoration: none;
-  font-size: 14px;exit
-}
-
-#list a:hover {
-  background-color: white;
-}
-
-#show-page {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 1rem;
-}
-
-#show-page div:nth-child(even) {
-  font-weight: bold;
-}
-
-#add-review-form {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 1rem;
-}
-
-#add-review-form input[type="submit"] {
-  width: 8rem;
-  grid-column: 2 / 3;
-  margin-bottom: 2rem;
+  border-radius: 5px;
 }
